@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login History</title>
+</head>
+<body>
+    <h1>Login History</h1>
+    <ul>
+        <% history.forEach(item => { %>
+            <li>
+                <strong>Browser:</strong> <%= item.browser %><br>
+                <strong>OS:</strong> <%= item.os %><br>
+                <strong>Device:</strong> <%= item.device %><br>
+                <strong>IP:</strong> <%= item.ip %><br>
+                <strong>Location:</strong> <%= item.location %><br>
+                <strong>Timestamp:</strong> <%= item.timestamp %>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
